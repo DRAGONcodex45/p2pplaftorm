@@ -1,0 +1,1392 @@
+html {
+    font-family: "League spartan", sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+li {
+    list-style: none;
+
+}
+
+
+header {
+    position: relative;
+    padding: 2rem 2rem;
+
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar .mylinks {
+    gap: 3rem;
+    display: flex;
+    margin: auto;
+
+}
+
+.mylinks a {
+    color: #ffffff;
+
+
+}
+
+.navbar .toggle_btn {
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: #108A00;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 1.25rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #000;
+}
+
+.action_button:active {
+    scale: 0.95;
+}
+
+.dropdown_menu {
+    position: absolute;
+    display: none;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(00, 00, 00, 0.1);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 480px;
+}
+
+.dropdown_menu li {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+@media only screen and (min-width: 576px) {
+    body {
+        font-family: "League spartan";
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    main {
+        background-image: url(bg.jpg);
+    }
+
+    h1 {
+        font-family: "League spartan", sans-serif;
+        font-size: 4rem;
+        color: #ffffff;
+        padding: 10px;
+
+    }
+
+    h6 {
+        font-family: "League spartan", sans-serif;
+        font-size: 2rem;
+        text-align: left;
+        align-items: left;
+    }
+
+    .bigtext {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        color: #ffffff;
+        padding: 10px;
+    }
+
+    #navwrapper {
+        width: 100%;
+        height: auto;
+        background-image: url(bg.jpg);
+        background-size: cover;
+
+    }
+
+
+    .navbar .mylinks,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+
+    }
+
+
+    .dropdown_menu {
+        display: block;
+        left: 2rem;
+        width: unset;
+    }
+
+
+    .client-image {
+        display: inline;
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .first-button {
+        background-color: #108A00;
+        padding: 18px 40px 18px 40px;
+        border-radius: 50px;
+        margin-top: 50px;
+        border-style: none;
+        font-size: 1rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    button:hover {
+        background-color: #16A34A;
+        cursor: pointer;
+
+    }
+
+    #corporate-image {
+        height: auto;
+        width: 100%;
+        padding-top: 20px;
+
+    }
+
+    #about {
+        margin-top: 40px;
+    }
+
+    #about-image {
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+
+    }
+
+
+    #container-wrapper {
+        display: inline-block;
+    }
+
+
+    .image-container {
+        position: relative;
+        margin-top: 50px;
+        transition: width 2s, height 4s;
+        padding: 10px;
+
+    }
+
+    .centered {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        top: 50%;
+        right: 50%;
+
+
+    }
+
+    .text {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.85rem;
+        color: rgb(102, 102, 102);
+
+    }
+
+    #container-row {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .icon-title {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        color: #143488;
+        font-weight: 500;
+    }
+
+    .p-text {
+        color: rgb(102, 102, 102);
+    }
+
+    .jarbox {
+        margin-bottom: 40px;
+    }
+
+    .hrbox {
+        margin-bottom: 40px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .image-container {
+        text-align: center;
+    }
+
+    h2 {
+        font-family: "League spartan", sans-serif;
+        font-size: 2rem;
+        color: #ffffff;
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+
+
+
+    .service-image {
+        display: none;
+    }
+
+    .service-card {
+        background-color: #0e2258;
+    }
+
+    .h2-smalltext {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #ffffff;
+        padding-left: 10px;
+
+    }
+
+    .h2-smalltext2 {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.25rem;
+        color: #ffffff;
+        padding-left: 10px;
+    }
+
+
+    .service-list {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        list-style: none;
+        padding: 40px;
+        color: #ffffff;
+
+
+    }
+
+    .servicebutton {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 15px;
+        margin-left: 20px;
+        margin-bottom: 2.5rem;
+        background-color: rgb(243, 90, 56);
+        color: #ffffff;
+        border-style: none;
+
+    }
+
+    h3 {
+        font-size: "Poppins", sans-serif;
+        font-size: 1rem;
+        color: rgb(243, 90, 56);
+        font-weight: 500;
+        text-align: center;
+
+    }
+
+    h4 {
+        font-family: "League spartan", sans-serif;
+        font-size: 2.2rem;
+        color: rgb(14, 34, 88);
+        text-align: center;
+
+
+    }
+
+    #product {
+        background-image: url(nik-MAgPyHRO0AA-unsplash.jpg);
+        top: 0;
+        margin-bottom: 1.25rem;
+    }
+
+    #service-box {
+        display: grid;
+    }
+
+
+
+
+    .box-one {
+        margin: auto;
+        text-align: center;
+        width: 543px;
+        height: 321px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding: 1.25rem;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .box-two {
+        margin: auto;
+        text-align: center;
+        width: 543px;
+        height: 321px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding: 1.25rem;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .box-three {
+        margin: auto;
+        text-align: center;
+        width: 543px;
+        height: 321px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding: 1.25rem;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .box-four {
+        margin: auto;
+        text-align: center;
+        width: 543px;
+        height: 321px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding: 1.25rem;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+
+    .box-five {
+        margin: auto;
+        text-align: center;
+        width: 543px;
+        height: 321px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding: 1.25rem;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+
+    }
+
+    .box-six {
+        margin: auto;
+        text-align: center;
+        width: 543px;
+        height: 321px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding: 1.25rem;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+
+
+    .box-img {
+        text-align: left;
+    }
+
+    .boxtext {
+        font-family: "Poppins", sans-serif;
+        color: rgb(102, 102, 102);
+        line-height: 24px;
+    }
+
+    .boxtitle {
+        font-family: "Poppins", sans-serif;
+        color: rgb(14, 34, 88);
+        font-weight: 700;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+
+    h5 {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        color: rgb(243, 90, 56);
+        text-align: center;
+
+    }
+
+    .h6 {
+        font-family: "League spartan", sans-serif;
+        font-size: 3rem;
+        font-weight: 700;
+        color: #ffffff;
+        text-align: left;
+        padding-top: 2rem;
+        margin-left: 2rem;
+        gap: 8rem;
+    }
+
+    .servicefooter {
+        line-height: 2rem;
+        color: #ffffff;
+        gap: 4rem;
+
+    }
+
+    .footer-links {
+        line-height: 2rem;
+        color: #ffffff;
+        text-decoration: none;
+
+    }
+
+    .h7 {
+        font-size: 1.75rem;
+        font-weight: 700;
+        padding-left: 2rem;
+        text-align: left;
+        margin-top: 2rem;
+
+    }
+
+    .h8 {
+        font-size: 1.75rem;
+        padding-left: 2rem;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 2rem;
+
+    }
+
+
+    #footer {
+        color: #ffffff;
+        bottom: 0;
+        margin: 0 auto;
+        max-width: 1200px;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+
+    }
+
+    #footer-container {
+        background-color: rgb(23, 23, 23);
+    }
+
+
+
+    .sectionwrapper {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .footer-bigtext {
+        font-family: "Poppins" sans-serif;
+        line-height: 1.3rem;
+        font-size: 1rem;
+        margin-left: 2rem;
+
+    }
+
+
+    .footer-links li {
+        text-decoration: none;
+    }
+
+    .form-heading {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.75rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .form-group {
+        height: 110px;
+        width: 220px;
+        border: 3px solid #16A34A;
+        border-radius: 20px;
+        margin: 0 auto;
+        padding: 15px 0 15px 15px;
+        bottom: 0;
+        margin-top: 2rem;
+
+
+    }
+
+    .form-group input {
+        border-radius: 5px;
+        padding: 10px;
+        width: 85%;
+    }
+
+    .form-group label {
+        padding-bottom: 1.25rem;
+    }
+
+    .subscribe-button {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        margin: 30px 0;
+        width: 90%;
+        padding: 5px;
+        border-radius: 20px;
+        border-style: none;
+        background-color: #108A00;
+
+    }
+
+    .service-button:hover {
+        background-color: #16A34A;
+    }
+
+    a:hover {
+        color: #108A00;
+
+    }
+
+    .copyright {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.9rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        color: #ffffff;
+
+    }
+
+    .footer-border {
+        border-bottom: 1px solid #F9FAFB;
+        margin: 30px 20px 20px 20px;
+
+    }
+
+    .section-2 {
+        display: flex;
+        width: 50%;
+        gap: 3rem;
+    }
+
+    .fa {
+        text-align: center;
+        margin: 5px 2px 0 2rem;
+        font-size: 1rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .fa-facebook {
+        color: white;
+
+    }
+
+    .fa-twitter {
+
+        color: white;
+    }
+
+
+    .fa-linkedin {
+
+        color: white;
+    }
+
+    .fa-instagram {
+
+        color: white;
+    }
+
+    .fa-youtube {
+        color: white;
+    }
+
+    .fa-google {
+
+        color: white;
+    }
+
+    .fa:hover {
+        opacity: 0.9;
+    }
+
+    #pricing_container {
+
+        margin: 3rem 0;
+        margin: 0 auto;
+        justify-content: center;
+    
+
+    }
+
+    #pricing_card {
+        width: 400px;
+        height: 428px;
+        border: 3px solid #000;
+        border-radius: 1.25rem;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+
+    #pricing_card1 {
+        width: 400px;
+        height: 415px;
+        border: 3px solid #000;
+        border-radius: 1.25rem;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        color: #ffffff;
+        background-color: #143488;
+    }
+
+    #pricing_card2 {
+        width: 400px;
+        height: 428px;
+        border: 3px solid #000;
+        border-radius: 1.25rem;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+
+
+
+
+    .title_wrapper {
+        display: flex;
+        margin: 1.5rem 0;
+
+    }
+
+    .card_text {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.8;
+        float: left;
+        padding: 10px;
+    }
+
+    .card_title {
+        margin: 0.5rem 0 0 1.25rem;
+        font-weight: 700;
+        font-size: 1.25rem;
+    }
+
+    .price {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .card_icon {
+        width: 80px;
+        height: 42px;
+        border: 1px solid #000;
+        margin-left: 2rem;
+        padding: 20px 0;
+        border-radius: 60px;
+        border-style: none;
+        background-color: rgb(243, 90, 56)
+    }
+
+    .card_list li {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.8rem;
+        line-height: 1.7rem;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    .card_button {
+        font-family: "Poppins" sans-serif;
+        padding: 8px 60px 8px 60px;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 1.25rem;
+        border: 2px solid #000;
+        margin-bottom: 10px;
+    }
+
+    .card_btn {
+        font-family: "Poppins" sans-serif;
+        padding: 8px 60px 8px 60px;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 1.25rem;
+        border: 2px solid #000;
+        margin-bottom: 10px;
+    }
+
+    .button_text {
+        float: center;
+        padding: 7px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        border-radius: 1.25rem;
+        border-style: none;
+        color: #ffffff;
+        background-color: #000;
+
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-family: "League spartan", sans-serif;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-family: "League spartan", sans-serif;
+        font-size: 4rem;
+    }
+
+    .bigtext {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+    }
+
+    #container-wrapper {
+        display: flex;
+    }
+
+    .image-container {
+        padding-left: 2rem;
+        text-align-last: center;
+    }
+
+    #container-row {
+        margin-top: 50px;
+        display: flex;
+        padding-left: 4.5rem;
+
+    }
+
+    #about-image {
+        text-align: center;
+    }
+
+
+    .jarbox {
+        margin-bottom: 40px;
+        margin-right: 5rem;
+
+    }
+
+    .hrbox {
+        margin-bottom: 40px;
+        margin-right: 5rem;
+    }
+
+    br {
+        display: flex;
+    }
+
+    #service-box {
+        display: block;
+    }
+
+    .form-heading {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.75rem;
+        font-weight: 700;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 995px) {
+
+    body {
+        font-family: "League spartan", sans-serif;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    header {
+        margin: 0 auto;
+    }
+
+    #hero-section {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1200px;
+        justify-content: center;
+
+    }
+
+    h1 {
+        font-family: 'league Spartan', sans-serif;
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+
+    .bigtext {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+    }
+
+
+    #about {
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    #about-image {
+        border-radius: 10px;
+    }
+
+    #container-wrapper {
+        display: grid;
+        padding-right: 3.5rem;
+
+    }
+
+
+
+    #container-row {
+        display: inline-block;
+
+
+    }
+
+    .container-line {
+        border-left: 1px solid #E5E7EB;
+        margin: 3.5rem 0 7rem 0;
+    }
+
+    .jarbox {
+        font-size: 0.9rem;
+        margin-bottom: 4rem;
+    }
+
+    .hrbox {
+        font-size: 0.9rem;
+        margin-bottom: 4rem;
+    }
+
+    .marketbox {
+        font-size: 0.9rem;
+        padding-right: 4rem;
+    }
+
+    .icon-title {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    /* br {
+        display: none;
+    } */
+
+
+    #service {
+        display: flex;
+
+    }
+
+    .service-card {
+        width: 1205.5px;
+        height: 744.38px;
+        background-color: #0e2258;
+        margin: 0 10px 0 0;
+
+    }
+
+    .service-image {
+        display: block;
+        object-fit: cover;
+        right: 0;
+
+    }
+
+    #service-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    #product {
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
+
+
+    .box-one {
+        margin: auto;
+        text-align: center;
+        width: 370px;
+        height: 369px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .box-two {
+        margin: auto;
+        text-align: center;
+        width: 370px;
+        height: 369px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .box-three {
+        margin: auto;
+        text-align: center;
+        width: 370px;
+        height: 369px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .box-four {
+        margin: auto;
+        text-align: left;
+        width: 370px;
+        height: 369px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+
+    .box-five {
+        margin: auto;
+        text-align: center;
+        width: 370px;
+        height: 369px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+
+    }
+
+    .box-six {
+        margin: auto;
+        text-align: center;
+        width: 370px;
+        height: 369px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .navbar .mylinks {
+        display: flex;
+    }
+
+
+
+    .toogle_btn {
+        display: none;
+    }
+
+    .dropdown_menu {
+        display: none;
+    }
+
+    .mylinks a {
+        font-size: 1.25rem;
+
+    }
+
+    #footer {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .form-heading {
+        font-family: "Poppins", sans-serif;
+        text-align: left;
+    }
+
+
+
+    .footer-border {
+        border-right: 1px solid white;
+    }
+
+    .section-1 {
+        width: 30%;
+    }
+
+    .section-2 {
+        display: flex;
+        width: 50%;
+
+
+    }
+
+    .section-3 {
+        width: 20%;
+    }
+
+
+    .fa {
+        font-size: 2rem;
+
+    }
+
+    #pricing_container {
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    #pricing_card {
+        margin: 0 10px;
+        width: 350px;
+        height: 528px;
+    }
+
+    #pricing_card1 {
+        margin: 0 10px;
+        width: 350px;
+        height: 567px;
+
+
+    }
+
+    #pricing_card2 {
+        margin: 0 10px;
+        width: 350px;
+        height: 528px;
+    }
+
+
+    .title_wrapper {
+        display: flex;
+        margin: 1.5rem 0;
+
+    }
+
+    .card_text {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.8;
+        float: left;
+        padding: 10px;
+    }
+
+    .card_title {
+        margin: 0.5rem 0 0 1.25rem;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    .price {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .card_icon {
+        width: 80px;
+        height: 42px;
+        border: 1px solid #000;
+        margin-left: 2rem;
+        padding: 20px 0;
+        border-radius: 60px;
+        border-style: none;
+        background-color: rgb(243, 90, 56)
+    }
+
+    .card_list li {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        line-height: 2.5rem;
+        text-align: left;
+        font-weight: 500;
+
+    }
+
+    .card_button {
+        font-family: "Poppins" sans-serif;
+        padding: 15px 60px 15px 60px;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 30px;
+        border: 2px solid #000;
+
+
+    }
+
+    .card_btn {
+        font-family: "Poppins" sans-serif;
+        padding: 15px 60px 15px 60px;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 30px;
+        border: 2px solid #000;
+        margin: 1rem 0 3rem 0;
+    }
+
+    .button_text {
+        float: center;
+        padding: 8px;
+        border-radius: 1.25rem;
+        border-style: none;
+        color: #ffffff;
+        font-weight: 500;
+        background-color: #000;
+
+    }
+
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    body {
+        font-family: "League spartan", sans-serif;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+    }
+
+
+
+    #service-box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .boxtext {
+        line-height: 1.5rem;
+        padding-top: 15px;
+    }
+
+    .boxtitle {
+        padding-top: 15px;
+    }
+
+
+    .box-one {
+        margin: auto;
+        text-align: left;
+        width: 370px;
+        height: 369px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        padding-top: 60px;
+        border: 1px solid #ffffff;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .box-two {
+        margin: auto;
+        text-align: left;
+        width: 370px;
+        height: 369px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding-top: 60px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .box-three {
+        margin: auto;
+        text-align: left;
+        width: 370px;
+        height: 369px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding-top: 60px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .box-four {
+        margin: auto;
+        text-align: left;
+        width: 370px;
+        height: 369px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding-top: 60px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+
+    .box-five {
+        margin: auto;
+        text-align: left;
+        width: 370px;
+        height: 369px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding-top: 60px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+
+    }
+
+    .box-six {
+        margin: auto;
+        text-align: left;
+        width: 370px;
+        height: 369px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding-top: 60px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+
+
+
+
+}
+
+
+
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {}

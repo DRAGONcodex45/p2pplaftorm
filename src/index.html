@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>P2P Barter Platform</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="navbar">
+                <img id="logo" src="we_processed.PNG" alt="logo" height="70px;" width="170px;">
+                <span class="nav_border"></span>
+                <ul class="mylinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Plan</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">FAQS</a></li>
+
+                </ul>
+                <a href="#" class="action_btn">Get started</a>
+                <div class="toggle_btn">
+
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Plan</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">FAQS</a></li>
+                <li><a href="#" class="action_btn">Get started</a></li>
+            </div>
+
+        </header>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toogleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+
+                toggleBtnIcon.classList = isOpen
+                    ? 'fas fa-xmark'
+                    : 'fas fa-bars'
+            }
+        </script>
+
+        <div id="hero-section">
+            <div>
+                <h1>Awesome Marketing Tools To Promote Your Service!</h1>
+                <p class="bigtext">Every pleasure is to be welcomed and every pain atvoided. But in certain
+                    circumstances and
+                    owing to the claims of duty obligations of business it will frequently occur that.</p>
+                <div class="client-image">
+                    <img id="client" src="1.png" alt="Klarna" height="52px;" width="80px;">
+                    <img id="client" src="2.png" alt="Litecoine" height="52px;" width="80px;">
+                    <img id="client" src="3.png" alt="Opay" height="52px;" width="80px;">
+                    <img id="client" src="4.png" alt="Bitcoin" height="52px;" width="80px;">
+                </div>
+                <div>
+                    <button class="first-button">Request A Quote</button>
+                </div>
+            </div>
+            <div id="corporate-image">
+                <img id="corporate" src="corporate.png" alt="corporate">
+            </div>
+        </div>
+    </main>
+
+    <div id="about">
+        <div id="about-image">
+            <img id="about-image" src="who-we-are-base.png" alt="about" height="470px;" width="528px;">
+        </div>
+        <div>
+            <div id="container-wrapper">
+                <div class="image-container">
+                    <img id="score" src="90.png" alt="success-score">
+                    <div class="centered">90%</div>
+                    <div class="text">Affordable Cost</div>
+                </div>
+                <div class="image-container">
+                    <img id="score" src="90.png" alt="success-score">
+                    <div class="centered">85%</div>
+                    <div class="text">Standard Deliverables</div>
+                </div>
+            </div>
+
+        </div>
+        <span class="container-line"></span>
+        <div id="container-row">
+            <div class="jarbox">
+                <div class="jar-icon">
+                    <img id="icon" src="jar.PNG">
+                </div>
+                <div class="icon-title">
+                    Passive Investment
+                </div>
+                <p class="p-text">Comparisim New harm </br>Melancholy</p>
+
+            </div>
+            <div class="hrbox">
+                <div class="hr-icon">
+                    <img id="icon" src="hr.PNG">
+                </div>
+                <div class="icon-title">
+                    HR Management
+                </div>
+                <p class="p-text">Coparisim New harm </br>Melancholy</p>
+
+            </div>
+            <div class="marketbox">
+                <div class="market-icon">
+                    <img id="icon" src="market.PNG">
+                </div>
+                <div class="icon-title">
+                    Excel Directory
+                </div>
+                <p class="p-text">Business Development summit</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="service">
+        <div class="service-card">
+            <h2>Why You Should</br> Choose Our Services.</h2>
+            <p class="h2-smalltext">When you're ready, we're ready with a MultiBank High-Yield Savings</br> Account.
+                Save
+                more with no limit on earnings.</p>
+            <p class="h2-smalltext2">We are trusted by more than <span
+                    style="font-size: 2rem; color: rgb(243, 90, 56);">3500</span>clients</p>
+            <ul class="service-list">
+                <li>✔ Invest your way</li>
+                <li>✔ Stay on top of the market</li>
+                <li>✔ Benefit from your relationship</li>
+            </ul>
+            <button class="servicebutton">Learn More</button>
+        </div>
+        <div class="service-image">
+            <img id="sales-rep" src="linkedin-sales-solutions-B_DJO2-K22M-unsplash.jpg" alt="sales-rep-image"
+                width="640.5px;" height="744.38px;">
+        </div>
+
+    </div>
+
+    <div id="product">
+        <h3>What We Do</h3>
+        <h4>Turn information into </br><span style="text-decoration: underline; text-decoration-thickness: 5px; text-decoration-color: rgb(243, 90, 56);
+;">actionable insights</span></h4>
+        <div id="service-box">
+            <div class="box-one">
+                <div class="box-img">
+                    <img id="icon8" src="icons8-marketing-48.png" height="60px;" width="60px;">
+                </div>
+                <div class="boxtitle">
+                    Marketing
+                </div>
+                <p class="boxtext">Continue indulged speaking the was out horrible for domestic position. Seeing rather
+                    her you not
+                    esteem men settle genius excuse. Deal say over you age from. Comparison new ham Comparison new ham
+                    melancholy.</p>
+            </div>
+
+            <div class="box-two">
+                <div class="box-img">
+                    <img id="icon8" src="icons8-technology-48.png" height="60px;" width="60px;">
+                </div>
+                <div class="boxtitle">
+                    Technology
+                </div>
+                <p class="boxtext">Continue indulged speaking the was out horrible for domestic position. Seeing rather
+                    her you not
+                    esteem men settle genius excuse. Deal say over you age from. Comparison new ham Comparison new ham
+                    melancholy.</p>
+            </div>
+            <div class="box-three">
+                <div class="box-img">
+                    <img id="icon8" src="icons8-technology-48.png" height="60px;" width="60px;">
+                </div>
+                <div class="boxtitle">
+                    Technology
+                </div>
+                <p class="boxtext">Continue indulged speaking the was out horrible for domestic position. Seeing rather
+                    her you not
+                    esteem men settle genius excuse. Deal say over you age from. Comparison new ham Comparison new ham
+                    melancholy.</p>
+            </div>
+
+            <div class="box-four">
+                <div class="box-img">
+                    <img id="icon8" src="icons8-optimization-64.png" alt="icon-image" height="60px;" width="60px;">
+                </div>
+                <div class="boxtitle">
+                    Smart-Contracts
+                </div>
+                <p class="boxtext">Continue indulged speaking the was out horrible for domestic position. Seeing
+                    rather
+                    her
+                    you not
+                    esteem men settle genius excuse. Deal say over you age from. Comparison new ham Comparison new ham
+                    melancholy.</p>
+            </div>
+
+            <div class="box-five">
+                <div class="box-img">
+                    <img id="icon8" src="icons8-content-48.png" height="60px;" width="60px;">
+                </div>
+                <div class="boxtitle">
+                    Branding
+                </div>
+                <p class="boxtext">Continue indulged speaking the was out horrible for domestic position. Seeing rather
+                    her
+                    you not
+                    esteem men settle genius excuse. Deal say over you age from. Comparison new ham Comparison new ham
+                    melancholy.</p>
+            </div>
+
+            <div class="box-six">
+                <div class="box-img">
+                    <img id="icon8" src="icons8-branding-48.png" height="60px;" width="60px;">
+                </div>
+                <div class="boxtitle">
+                    Blockchain
+                </div>
+                <p class="boxtext">Continue indulged speaking the was out horrible for domestic position. Seeing rather
+                    her
+                    you not
+                    esteem men settle genius excuse. Deal say over you age from. Comparison new ham Comparison new ham
+                    melancholy.</p>
+            </div>
+        </div>
+    </div>
+    <div id="pricing_container">
+        <div id="pricing_card">
+            <div class="title_wrapper">
+                <div class="card_icon">
+                    <img src="icons8-branding-48.png">
+                </div>
+                <div class="card_title">
+                    Starter </br>Plan
+                    <div class="price">
+                        $20/month
+                    </div>
+                </div>
+            </div>
+
+            <p class="card_text">Continue indulged speaking the was out horrible for domestic position.
+                her you not</p>
+            <button class="card_button">Get started</button>
+            <ul class="card_list">
+
+                <li>✔Get high converion</li>
+                <li>✔Virtual private server</li>
+                <li>✔SEO Optimization</li>
+                <li>✔Get high conversion </li>
+            </ul>
+            <button class="button_text">14 days free trial-no credit card required</button>
+        </div>
+
+        <div id="pricing_card1">
+            <div class="title_wrapper">
+                <div class="card_icon">
+                    <img src="icons8-branding-48.png">
+                </div>
+                <div class="card_title">
+                    Starter</br> Plan
+                    <div class="price">
+                        $20/month
+                    </div>
+                </div>
+            </div>
+
+            <p class="card_text">Continue indulged speaking the was out horrible for domestic position.
+                her you not</p>
+            <ul class="card_list">
+
+                <li>✔Get high converion</li>
+                <li>✔Virtual private server</li>
+                <li>✔SEO Optimization</li>
+                <li>✔Get high conversion </li>
+            </ul>
+            <button class="card_btn">Get started</button>
+            <button class="button_text">14 days free trial-no credit card required</button>
+        </div>
+
+        <div id="pricing_card2">
+            <div class="title_wrapper">
+                <div class="card_icon">
+                    <img src="icons8-branding-48.png">
+                </div>
+                <div class="card_title">
+                    Starter</br> Plan
+                    <div class="price">
+                        $20/month
+                    </div>
+                </div>
+            </div>
+
+            <p class="card_text">Continue indulged speaking the was out horrible for domestic position.
+                her you not</p>
+            <button class="card_button">Get started</button>
+            <ul class="card_list">
+
+                <li>✔Get high converion</li>
+                <li>✔Virtual private server</li>
+                <li>✔SEO Optimization</li>
+                <li>✔Get high conversion </li>
+            </ul>
+            <button class="button_text">14 days free trial-no credit card required</button>
+        </div>
+
+    </div>
+
+
+
+
+    <div style="margin-top: 500px;"></div>
+    <div id="footer-container">
+        <div id="footer">
+            <div class="section-1">
+                <div class="h6">Lets Connect</div>
+                <p class="footer-bigtext">Quisquam est, qui dolorem ipsum quia dolor sit amet, consecte adipisci velit,
+                    sed
+                    quia non numquam eius
+                    modi
+                    tempora incidu labore et dolore magnam voluptatem.</p>
+                <span>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </span>
+                <div class="footer-border"></div>
+            </div>
+            <div class="section-2">
+                <div class="servicefooter">
+                    <span class="h7">Service!</span>
+                    <ul>
+                        <li><a href="#">Amazon AWS</a></li>
+                        <li><a href="#">Web development</a></li>
+                        <li><a href="#">Rest ApIs</a></li>
+                        <li><a href="#">Backend protocols</a></li>
+                        <li><a href="#">Responsive designs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <span class="h8">Links</span>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="section-3">
+                <div class="form-heading">Newsletter</div>
+                <form>
+                    <div class="form-group">
+                        <input type="text" id="email" name="email" required placeholder="email address"></br>
+                        <button class="subscribe-button">Subscribe</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+        <div class="copyright">© 2023 by Dragoncodex. All Rights Reserved</div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
