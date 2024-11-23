@@ -108,8 +108,438 @@ header {
 
 }
 
+.box-one,
+.box-two,
+.box-three,
+.box-four,
+.box-five,
+.box-six:hover{
+cursor: pointer;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0, 0.2);
 
-@media only screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 360px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    
+
+    main {
+        background-image: url(bg.jpg);
+        width: 100%;
+    }
+
+
+    #client {
+        width: 50px;
+        height: 30px;
+    }
+
+    .client-image {
+        padding: 10px;
+    }
+
+    h1 {
+        font-family: "League spartan", sans-serif;
+        color: #ffffff;
+        padding: 10px;
+    }
+
+    .bigtext {
+        font-family: "Poppins", sans-serif;
+        color: #ffffff;
+        padding: 10px;
+    }
+
+    .first-button {
+        background-color: #108A00;
+        padding: 10px 15px 10px 15px;
+        border-radius: 50px;
+        margin-top: 30px;
+        border-style: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        color: #ffffff;
+        margin-left: 10px;
+        justify-content: center;
+    }
+
+
+    #corporate {
+        height: auto;
+        width: 100%;
+        margin-top: 1.25rem;
+
+    }
+
+    #about-image {
+        display: none;
+    }
+
+    #container-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0;
+
+    }
+
+    .icon-title {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.9rem;
+        color: #143488;
+        font-weight: 400;
+    }
+
+    .p-text {
+        color: rgb(102, 102, 102);
+    }
+
+    .service-card {
+        background: #0e2258;
+    }
+
+    .service-image {
+        display: none;
+    }
+
+
+    h2 {
+        font-family: "League spartan", sans-serif;
+        font-size: 1.25rem;
+        color: #ffffff;
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+
+    .h2-smalltext {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #ffffff;
+        padding-left: 10px;
+
+    }
+
+    .h2-smalltext2 {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.9rem;
+        color: #ffffff;
+        padding-left: 10px;
+    }
+
+    .service-list {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.9rem;
+        list-style: none;
+        padding: 20px;
+        color: #ffffff;
+    }
+
+    .servicebutton {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 400;
+        padding: 10px;
+        margin-left: 20px;
+        margin-bottom: 1.5rem;
+        background-color: rgb(243, 90, 56);
+        color: #ffffff;
+        border-style: none;
+    }
+
+    h3 {
+        font-size: "Poppins", sans-serif;
+        font-size: 1rem;
+        color: rgb(243, 90, 56);
+        font-weight: 500;
+        text-align: center;
+    }
+
+    h4 {
+        font-family: "League spartan", sans-serif;
+        font-size: 1.2rem;
+        color: rgb(14, 34, 88);
+        text-align: center;
+
+
+    }
+
+    #service-box {
+        background-image: url(nik-MAgPyHRO0AA-unsplash.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .box-one {
+        margin: 15px 0;
+        text-align: center;
+        width: 343px;
+        height: 260px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding: 1.25rem;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .box-two,
+    .box-three,
+    .box-four,
+    .box-five,
+    .box-six {
+        text-align: center;
+        width: 343px;
+        height: 260px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        border: 1px solid #ffffff;
+        padding: 1.25rem;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+
+    }
+
+
+
+
+    .boxtitle {
+        font-family: "Poppins", sans-serif;
+        color: rgb(14, 34, 88);
+        font-weight: 700;
+        text-align: left;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .boxtext {
+        font-family: "Poppins", sans-serif;
+        color: rgb(102, 102, 102);
+        font-size: 0.8rem;
+        text-align: left;
+    }
+
+    #pricing_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #pricing_card, #pricing_card2 {
+        width: 320px;
+        height: 281px;
+        border: 2px solid #000;
+        border-radius: 1.25rem;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    #pricing_card1 {
+        width: 320px;
+        height: 277px;
+        border: 2px solid #000;
+        border-radius: 1.25rem;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        color: #ffffff;
+        background-color: #143488;
+    }
+
+
+    .card_button {
+        font-family: "Poppins" sans-serif;
+        padding: 4px 50px 4px 50px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        border-radius: 1.25rem;
+        border: 2px solid #000;
+        margin-bottom: 10px;
+    }
+
+
+    .card_btn {
+        font-family: "Poppins" sans-serif;
+        padding: 5px 50px 5px 50px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        border-radius: 1.25rem;
+        border: 2px solid #000;
+        margin-bottom: 20px;
+
+    }
+
+    .card_list li {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+        text-align: left;
+        font-weight: 400;
+    }
+
+    .button_text {
+        float: center;
+        padding: 1px;
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+        border-radius: 1.25rem;
+        border-style: none;
+        color: #ffffff;
+        background-color: #000;
+
+    }
+
+    .card_icon {
+        display: none;
+    }
+
+    .card_text {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.7rem;
+        float: left;
+    }
+
+    .card_title {
+        margin: 0.5rem 0 0 1.25rem;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+
+    #footer-container {
+        background-color: rgb(23, 23, 23);
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .footer-bigtext {
+        font-family: "Poppins" sans-serif;
+        line-height: 1.3rem;
+        font-size: 0.8rem;
+        color: #ffffff;
+        margin-left: 10px;
+
+    }
+
+    .h6 {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        color: #ffffff;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .h7,
+    .h8 {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #ffffff;
+        text-align: center;
+
+
+
+    }
+
+    .form-group {
+        height: 65px;
+        width: 190px;
+        border: 2px solid #16A34A;
+        border-radius: 20px;
+        margin: 0 auto;
+        padding: 15px 0 15px 15px;
+        bottom: 0;
+        margin-top: 1.25rem;
+
+    }
+
+    .subscribe-button {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        margin: 20px 0;
+        width: 90%;
+        padding: 3px;
+        border-radius: 20px;
+        border-style: none;
+        background-color: #108A00;
+
+    }
+
+    .form-group input {
+        border-radius: 5px;
+        padding: 3px;
+        width: 85%;
+    }
+
+    .form-group label {
+        padding-bottom: 1.25rem;
+    }
+
+    .form-heading {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+        text-align: center;
+        padding-top: 30px;
+        color: #ffffff;
+
+    }
+
+    .fa {
+        text-align: center;
+        margin: 20px 0 1.8rem 1rem;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .social {
+        text-align: center;
+    }
+
+    .servicefooter {
+        line-height: 1.7rem;
+    }
+
+    .footer-links {
+        line-height: 1.7rem;
+    }
+
+
+}
+
+
+@media screen and (min-width: 576px) {
     body {
         font-family: "League spartan";
         padding: 0;
@@ -119,6 +549,7 @@ header {
 
     main {
         background-image: url(bg.jpg);
+
     }
 
     h1 {
@@ -177,6 +608,11 @@ header {
         padding: 10px;
     }
 
+    #client {
+        width: 80px;
+        height: 52px;
+    }
+
     .first-button {
         background-color: #108A00;
         padding: 18px 40px 18px 40px;
@@ -207,6 +643,7 @@ header {
     }
 
     #about-image {
+        display: block;
         max-width: 100%;
         height: auto;
         padding: 10px;
@@ -367,78 +804,11 @@ header {
 
 
 
-    .box-one {
-        margin: auto;
-        text-align: center;
-        width: 543px;
-        height: 321px;
-        font-size: 0.875rem;
-        box-sizing: border-box;
-        border: 1px solid #ffffff;
-        padding: 1.25rem;
-        background-color: #ffffff;
-        border-radius: 5px;
-        margin-bottom: 15px;
-    }
-
-    .box-two {
-        margin: auto;
-        text-align: center;
-        width: 543px;
-        height: 321px;
-        font-size: 0.875rem;
-        box-sizing: border-box;
-        border: 1px solid #ffffff;
-        padding: 1.25rem;
-        background-color: #ffffff;
-        border-radius: 5px;
-        margin-bottom: 15px;
-    }
-
-    .box-three {
-        margin: auto;
-        text-align: center;
-        width: 543px;
-        height: 321px;
-        font-size: 0.875rem;
-        box-sizing: border-box;
-        border: 1px solid #ffffff;
-        padding: 1.25rem;
-        background-color: #ffffff;
-        border-radius: 5px;
-        margin-bottom: 15px;
-    }
-
-    .box-four {
-        margin: auto;
-        text-align: center;
-        width: 543px;
-        height: 321px;
-        font-size: 0.875rem;
-        box-sizing: border-box;
-        border: 1px solid #ffffff;
-        padding: 1.25rem;
-        background-color: #ffffff;
-        border-radius: 5px;
-        margin-bottom: 15px;
-    }
-
-
-    .box-five {
-        margin: auto;
-        text-align: center;
-        width: 543px;
-        height: 321px;
-        font-size: 0.875rem;
-        box-sizing: border-box;
-        border: 1px solid #ffffff;
-        padding: 1.25rem;
-        background-color: #ffffff;
-        border-radius: 5px;
-        margin-bottom: 15px;
-
-    }
-
+    .box-one,
+    .box-two,
+    .box-three,
+    .box-four,
+    .box-five,
     .box-six {
         margin: auto;
         text-align: center;
@@ -451,8 +821,8 @@ header {
         background-color: #ffffff;
         border-radius: 5px;
         margin-bottom: 15px;
-    }
 
+    }
 
 
     .box-img {
@@ -496,7 +866,6 @@ header {
     .servicefooter {
         line-height: 2rem;
         color: #ffffff;
-        gap: 4rem;
 
     }
 
@@ -527,13 +896,11 @@ header {
 
 
     #footer {
-        color: #ffffff;
-        bottom: 0;
+        display: flex;
+        flex-direction: column;
         margin: 0 auto;
-        max-width: 1200px;
         justify-content: center;
         align-items: center;
-        display: grid;
 
     }
 
@@ -553,6 +920,7 @@ header {
         line-height: 1.3rem;
         font-size: 1rem;
         margin-left: 2rem;
+        flex-shrink: 1;
 
     }
 
@@ -632,7 +1000,7 @@ header {
     .section-2 {
         display: flex;
         width: 50%;
-        gap: 2rem;
+        gap: 3rem;
     }
 
     .fa {
@@ -642,7 +1010,6 @@ header {
         text-align: center;
         justify-content: center;
         align-items: center;
-
 
     }
 
@@ -685,11 +1052,12 @@ header {
         margin: 3rem 0;
         margin: 0 auto;
         justify-content: center;
-    
+
 
     }
 
-    #pricing_card {
+    #pricing_card,
+    #prcing_card2 {
         width: 400px;
         height: 428px;
         border: 3px solid #000;
@@ -713,20 +1081,6 @@ header {
         color: #ffffff;
         background-color: #143488;
     }
-
-    #pricing_card2 {
-        width: 400px;
-        height: 428px;
-        border: 3px solid #000;
-        border-radius: 1.25rem;
-        margin: 0 auto;
-        text-align: center;
-        align-items: center;
-        margin-bottom: 2rem;
-    }
-
-
-
 
 
     .title_wrapper {
@@ -754,6 +1108,7 @@ header {
     }
 
     .card_icon {
+        display: block;
         width: 80px;
         height: 42px;
         border: 1px solid #000;
@@ -804,25 +1159,10 @@ header {
 
     }
 
-
-
-
-
-
-
-
-
 }
 
 
-
-
-
-
-
-
-
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     body {
         font-family: "League spartan", sans-serif;
         padding: 0;
@@ -852,7 +1192,11 @@ header {
     #container-row {
         margin-top: 50px;
         display: flex;
-        padding-left: 4.5rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+
 
     }
 
@@ -877,7 +1221,9 @@ header {
     }
 
     #service-box {
-        display: block;
+        display: flex;
+        flex-direction: row;
+
     }
 
     .form-heading {
@@ -886,12 +1232,188 @@ header {
         font-weight: 700;
     }
 
+    .sectionwrapper {
+        display: flex;
+    }
+
+    #footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .footer-bigtext {
+        flex-shrink: 1;
+    }
+
+    #service-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+
+    }
+
+
+
+    #pricing_container {
+        display: flex;
+        flex-direction: row;
+        margin: 30px 0;
+
+    }
+
+
+    #pricing_card,
+    #pricing_card2 {
+        width: 245px;
+        height: 430px;
+        border: 3px solid #000;
+        border-radius: 1.25rem;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+
+    #pricing_card1 {
+        width: 245px;
+        height: 440px;
+        border: 3px solid #000;
+        border-radius: 1.25rem;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        color: #ffffff;
+        background-color: #143488;
+    }
+
+    .title_wrapper {
+        display: flex;
+        margin: 1.5rem 0;
+
+    }
+
+    .card_text {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.8;
+        float: left;
+        padding: 10px;
+    }
+
+    .card_title {
+        margin: 0.5rem 0 0 1.25rem;
+        font-weight: 700;
+        font-size: 1.25rem;
+    }
+
+    .price {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    #about-image {
+        margin: 0 auto;
+    }
+
+    .card_icon {
+        display: block;
+        width: 80px;
+        height: 42px;
+        border: 1px solid #000;
+        margin-left: 2rem;
+        padding: 20px 0;
+        border-radius: 60px;
+        border-style: none;
+        background-color: rgb(243, 90, 56)
+    }
+
+    .card_list li {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.8rem;
+        line-height: 1.7rem;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    .card_button {
+        font-family: "Poppins" sans-serif;
+        padding: 8px 60px 8px 60px;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 1.25rem;
+        border: 2px solid #000;
+        margin-bottom: 10px;
+    }
+
+    .card_btn {
+        font-family: "Poppins" sans-serif;
+        padding: 8px 60px 8px 60px;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 1.25rem;
+        border: 2px solid #000;
+        margin-bottom: 34px;
+    }
+
+    .button_text {
+        float: center;
+        padding: 4px;
+        border-radius: 1.25rem;
+        border-style: none;
+        color: #ffffff;
+        background-color: #000;
+
+    }
+
+    .box-one {
+        width: 295px;
+        height: 369px;
+        margin-bottom: 15px;
+    }
+
+    .box-two {
+
+        width: 295px;
+        height: 369px;
+        margin-bottom: 15px;
+    }
+
+    .box-three {
+
+        width: 295px;
+        height: 369px;
+        margin-bottom: 15px;
+    }
+
+    .box-four {
+        width: 295px;
+        height: 369px;
+        margin-bottom: 15px;
+    }
+
+
+    .box-five {
+        width: 295px;
+        height: 369px;
+        margin-bottom: 15px;
+
+    }
+
+    .box-six {
+        width: 295px;
+        height: 369px;
+        margin-bottom: 15px;
+    }
 
 }
 
 
 
-@media only screen and (min-width: 995px) {
+@media screen and (min-width: 995px) {
 
     body {
         font-family: "League spartan", sans-serif;
@@ -947,11 +1469,12 @@ header {
         display: inline-block;
 
 
+
     }
 
     .container-line {
         border-left: 1px solid #E5E7EB;
-        margin: 3.5rem 0 7rem 0;
+        margin: 3.5rem 4rem 7rem 0;
     }
 
     .jarbox {
@@ -975,12 +1498,8 @@ header {
         font-weight: 700;
     }
 
-    /* br {
-        display: none;
-    } */
 
-
-    #service {
+   #service {
         display: flex;
 
     }
@@ -997,15 +1516,19 @@ header {
         display: block;
         object-fit: cover;
         right: 0;
-
     }
+
 
     #service-box {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
 
     }
+
 
     #product {
         margin: 0 auto;
@@ -1013,82 +1536,15 @@ header {
     }
 
 
-    .box-one {
-        margin: auto;
-        text-align: center;
-        width: 370px;
-        height: 369px;
-        font-size: 0.875rem;
-        box-sizing: border-box;
-        border: 1px solid #ffffff;
-        padding: 10px;
-        background-color: #ffffff;
-        border-radius: 5px;
-        margin-bottom: 15px;
-    }
-
-    .box-two {
-        margin: auto;
-        text-align: center;
-        width: 370px;
-        height: 369px;
-        font-size: 0.875rem;
-        box-sizing: border-box;
-        border: 1px solid #ffffff;
-        padding: 10px;
-        background-color: #ffffff;
-        border-radius: 5px;
-        margin-bottom: 15px;
-    }
-
-    .box-three {
-        margin: auto;
-        text-align: center;
-        width: 370px;
-        height: 369px;
-        font-size: 0.875rem;
-        box-sizing: border-box;
-        border: 1px solid #ffffff;
-        padding: 10px;
-        background-color: #ffffff;
-        border-radius: 5px;
-        margin-bottom: 15px;
-    }
-
-    .box-four {
-        margin: auto;
-        text-align: left;
-        width: 370px;
-        height: 369px;
-        font-size: 0.875rem;
-        box-sizing: border-box;
-        border: 1px solid #ffffff;
-        padding: 10px;
-        background-color: #ffffff;
-        border-radius: 5px;
-        margin-bottom: 15px;
-    }
-
-
-    .box-five {
-        margin: auto;
-        text-align: center;
-        width: 370px;
-        height: 369px;
-        font-size: 0.875rem;
-        box-sizing: border-box;
-        border: 1px solid #ffffff;
-        padding: 10px;
-        background-color: #ffffff;
-        border-radius: 5px;
-        margin-bottom: 15px;
-
-    }
-
+    .box-one,
+    .box-two,
+    .box-three,
+    .box-four,
+    .box-five,
     .box-six {
         margin: auto;
         text-align: center;
-        width: 370px;
+        width: 320px;
         height: 369px;
         font-size: 0.875rem;
         box-sizing: border-box;
@@ -1097,7 +1553,10 @@ header {
         background-color: #ffffff;
         border-radius: 5px;
         margin-bottom: 15px;
+
+
     }
+
 
     .navbar .mylinks {
         display: flex;
@@ -1120,7 +1579,10 @@ header {
 
     #footer {
         display: flex;
+        flex-direction: row;
         margin: 0 auto;
+        max-width: 1200px;
+
     }
 
     .form-heading {
@@ -1140,13 +1602,13 @@ header {
 
     .section-2 {
         display: flex;
-        width: 50%;
+        width: 40%;
 
 
     }
 
     .section-3 {
-        width: 20%;
+        width: 30%;
     }
 
 
@@ -1157,7 +1619,8 @@ header {
 
     #pricing_container {
         display: flex;
-        margin: 0 auto;
+        flex-direction: row;
+
 
     }
 
@@ -1207,6 +1670,7 @@ header {
     }
 
     .card_icon {
+        display: block;
         width: 80px;
         height: 42px;
         border: 1px solid #000;
@@ -1258,13 +1722,7 @@ header {
 
     }
 
-
-
-
-
 }
-
-
 
 @media only screen and (min-width: 1200px) {
 
@@ -1275,7 +1733,10 @@ header {
         font-size: 16px;
     }
 
-
+    header {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
 
     #service-box {
         display: flex;
@@ -1298,91 +1759,24 @@ header {
     .box-one {
         margin: auto;
         text-align: left;
-        width: 370px;
+        width: 390px;
         height: 369px;
-        font-size: 0.875rem;
-        box-sizing: border-box;
-        padding-top: 60px;
-        border: 1px solid #ffffff;
-        background-color: #ffffff;
-        border-radius: 5px;
-        margin-bottom: 15px;
-    }
-
-    .box-two {
-        margin: auto;
-        text-align: left;
-        width: 370px;
-        height: 369px;
-        font-size: 0.875rem;
-        box-sizing: border-box;
-        border: 1px solid #ffffff;
-        padding-top: 60px;
-        background-color: #ffffff;
-        border-radius: 5px;
-        margin-bottom: 15px;
-    }
-
-    .box-three {
-        margin: auto;
-        text-align: left;
-        width: 370px;
-        height: 369px;
-        font-size: 0.875rem;
-        box-sizing: border-box;
-        border: 1px solid #ffffff;
-        padding-top: 60px;
-        background-color: #ffffff;
-        border-radius: 5px;
-        margin-bottom: 15px;
-    }
-
-    .box-four {
-        margin: auto;
-        text-align: left;
-        width: 370px;
-        height: 369px;
-        font-size: 0.875rem;
-        box-sizing: border-box;
-        border: 1px solid #ffffff;
-        padding-top: 60px;
-        background-color: #ffffff;
-        border-radius: 5px;
-        margin-bottom: 15px;
-    }
-
-
-    .box-five {
-        margin: auto;
-        text-align: left;
-        width: 370px;
-        height: 369px;
-        font-size: 0.875rem;
-        box-sizing: border-box;
-        border: 1px solid #ffffff;
-        padding-top: 60px;
-        background-color: #ffffff;
-        border-radius: 5px;
-        margin-bottom: 15px;
 
     }
 
+    .box-one,
+    .box-two,
+    .box-three,
+    .box-four,
+    .box-five,
     .box-six {
         margin: auto;
         text-align: left;
-        width: 370px;
+        width: 380px;
         height: 369px;
-        font-size: 0.875rem;
-        box-sizing: border-box;
-        border: 1px solid #ffffff;
-        padding-top: 60px;
-        background-color: #ffffff;
-        border-radius: 5px;
         margin-bottom: 15px;
+
     }
-
-
-
 
 
 }
